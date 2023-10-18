@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/index.css" />
+    <script src="https://kit.fontawesome.com/8ff804cbc6.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-block">
+        <div class="logo">
+          <h1 class="logo__text">loremipsum.<span class="accent">net</span></h1>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="navBar__ul">
+          <li class="navBar__li"><a class="navBar__a" href="#">бизнес</a></li>
+          <li class="navBar__li"><a class="navBar__a" href="#">о нас</a></li>
+          <li class="navBar__li"><a class="navBar__a" href="#">цены</a></li>
+          <li class="navBar__li"><a class="navBar__a" href="#">оформить заказ</a></li>
+        </ul>
+      </div>
+    </header>
+    <content>
+      <section class="section1">
+        <div class="section1-main">
+          <h1 class="section1-main__h1 anim">
+            <span class="accent">Lorem ipsum</span> dolor sit ametconsectetur
+            <span class="accent">adipiscing</span>
+          </h1>
+          <p class="section1-main__p">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </p>
+          <ul class="section1-main__ul">
+            <li class="section1-main__li">Totam rem aperiam eaque ipsa</li>
+            <li class="section1-main__li">Sit voluptatem accusantium doloremque laudantium</li>
+            <li class="section1-main__li">Sed ut perspiciatis, unde omnis iste natus error</li>
+          </ul>
+          <div class="section1-button">
+            <button class="section1-button__btn" type="botton">Заказать</button>
+            <button class="section1-button__btn" type="botton">Подробнее</button>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="section2-main">
+          <h3 class="section2-main__h3">оформлениe <span class="accent">заказа</span></h3>
+          <p class="section2-main__p">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </p>
+          <div class="schemeOfWork">
+            <div class="schemeOfWork-block1 schemeOfWork-block">
+              <img src="./img/imgBlock1.svg" />
+              <p class="schemeOfWork-block__p">Lorem ipsum dolor sit amet</p>
+            </div>
+            <img class="blockDot" src="./img/imgBlockDot.svg" />
+            <div class="schemeOfWork-block2 schemeOfWork-block">
+              <img src="./img/imgBlock2.svg" />
+              <p class="schemeOfWork-block__p">Сonsecteturadipiscing elit</p>
+            </div>
+            <img class="blockDot" src="./img/imgBlockDot.svg" />
+            <div class="schemeOfWork-block3 schemeOfWork-block">
+              <img src="./img/imgBlock3.svg" />
+              <p class="schemeOfWork-block__p">Sed do eiusmod tempor</p>
+            </div>
+            <img class="blockDot" src="./img/imgBlockDot.svg" />
+            <div class="schemeOfWork-block4 schemeOfWork-block">
+              <img src="./img/imgBlock4.svg" />
+              <p class="schemeOfWork-block__p">Esse cillum dolore eu fugiat</p>
+            </div>
+            <img class="blockDot" src="./img/imgBlockDot.svg" />
+            <div class="schemeOfWork-block5 schemeOfWork-block">
+              <img src="./img/imgBlock5.svg" />
+              <p class="schemeOfWork-block__p">Excepteur sint occaecat cupidatat non proident</p>
+            </div>
+          </div>
+          <div class="faciensOrdinem">
+            <select>
+              <option>Тип системы</option>
+              <option>Sed ut perspiciatis</option>
+              <option>Nemo enim ipsam</option>
+              <option>Et harum quidem</option>
+              <option>Temporibus autem</option>
+              <option>Itaque earum rerum</option>
+            </select>
+            <input type="email" class="inputEnter" placeholder="Ваш e-mail" />
+            <input type="text" class="inputEnter" placeholder="Ваше имя" />
+            <label for="range" class="inputRange"
+              >Sed ut perspiciatis, unde omnis iste natus<span class="spanRange">0%</span>
+              <input
+                type="range"
+                class="inputRange__input"
+                value="0"
+                min="0"
+                max="100"
+                name="range"
+              />
+            </label>
+            <div class="faciensOrdinem-inputBtnFile">
+              <input
+                type="file"
+                id="inputFile"
+                class="faciensOrdinem-inputBtnFile__input"
+                accept=".pdf"
+              />
+              <label for="inputFile" class="faciensOrdinem-inputBtnFile__inputLabelFile">
+                <span class="faciensOrdinem-inputBtnFile__inputSpanFile">Прикрепить файл</span>
+              </label>
+            </div>
+            <button class="submitBtn">Отправить</button>
+          </div>
+        </div>
+      </section>
+    </content>
+    <footer>
+      <div class="footer_main">
+        <div class="footer_copyrights">
+          <p>© 2018 «LOREMIPSUM.NET» Все права защищены.</p>
+        </div>
+        <div class="footer_pay">
+          <ul class="footer_ul flexCenter">
+            <li><img src="./img/QIWI wallet.png" /> QIWI wallet</li>
+            <li><img src="./img/Yandex Money.png" /> Yandex Money</li>
+            <li><img src="./img/Web Money.png" /> Web Money</li>
+          </ul>
+        </div>
+        <div class="footer_social-networks">
+          <ul class="footer_ul flexCenter">
+            <li><img src="./img/mail.svg" />oddff@mail.ru</li>
+            <li><img src="./img/VK.svg" />Мы в контакте</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./JS/anim.js"></script>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+header{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  background-color: $backgroundHeaderColor;
+  @include flexCenterCenter;
+}
+.header-block{
+  width: $mainWidth;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.logo{
+}
+.logo__text{
+  @include Raleway80028;
+  position: relative;
+}
+.navBar__ul{
+  display: flex;
+  gap: 60px;
+}
+.navBar__li {
+  list-style-type: none;
+  transition: transform 1s;
+  transform: scale(1);
+
+  &:hover{
+    transform: scale(1.5);
+    transition: transform 1s;
+  }
+}
+.navBar__a{
+  @include Lato70013;
+  text-decoration: none;
+  transition: color 1s;
+
+  &:hover{
+    color:$accentColor;
+    transition: color 1s, transform 1s;
+  }
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+  // background: $backgroundHeaderColor;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+
+@media (max-width: 1250px) {
+  .header-block{
+    width: $mainWidth1250px;
+    padding: 15px;
+  }  
+}
+
+@media (max-width: 1000px) {
+  .header-block{
+    width: $mainWidth1000px;
+  }  
+}
+
+@media (max-width: 850px) {
+  header{
+    height: 80px;
+  }
+  .logo__text{
+    @include Raleway80024;
+    position: relative;
+  }
+  .navBar__ul{
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .navBar__ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 80px;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+  #menu-toggle ~ .navBar__ul li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    & a{
+      display: none;
+    }
+
+  }
+  #menu-toggle:checked ~ .navBar__ul li {
+    display: flex;
+    border: 1px solid #333;
+    height: 1.2em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    & a{
+      display: block;
+    }
+
+  }
+  .navBar__ul > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: $backgroundHeaderColor;
+  }
+  .navBar__ul > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}

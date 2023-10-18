@@ -1,0 +1,19 @@
+
+@import 'mixins';
+@import 'font';
+@import 'color';
+@import 'variables';
+@import 'header';
+@import 'section1';
+@import 'section2';
+@import 'footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.accent{
+  color: $accentColor;
+}

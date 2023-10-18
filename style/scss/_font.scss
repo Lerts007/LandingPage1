@@ -1,0 +1,110 @@
+
+/*400*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src:
+  url('../../font/Lato/Lato-Regular.ttf');
+}
+
+/*600*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  src:
+  url('../../font/Lato/Lato-SemiBold.ttf');
+}
+
+/*700*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src:
+  url('../../font/Lato/Lato-Bold.ttf');
+}
+
+/*800*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  src:
+  url('../../font/Lato/Lato-ExtraBold.ttf');
+}
+
+@mixin Raleway80028{
+  color: $colorTextWhite;
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+@mixin Raleway80024{
+  color: $colorTextWhite;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@mixin Lato80036{
+  color: $colorTextWhite;
+  font-family: 'Lato';
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@mixin Lato70013{
+  color: $colorTextWhite;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@mixin Lato70048{
+  color: $colorTextBlack;
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin Lato70020{
+  color: $colorTextBlack;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@mixin Lato40013{
+  color: $colorTextBlack;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+@mixin Lato40016{
+  color: $colorTextWhite;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@mixin Lato40018{
+  color: $colorTextGrey;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@mixin Lato40020{
+  color: $colorTextBlack;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+}
